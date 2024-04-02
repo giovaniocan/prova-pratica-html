@@ -1,68 +1,92 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
   padding: 1rem 0;
   background-color: #333;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 h1 {
   color: white;
 }
 
-.nav_content {
+.nav {
   background-color: #444;
   padding: 0.5rem;
   text-align: center;
-  font-size: 25px;
 }
 
-.nav_content ul {
+.nav ul {
   display: flex;
   justify-content: center;
-  text-align: center;
   gap: 3rem;
-}
-
-.nav_content ul li {
   list-style: none;
 }
 
-.nav_content ul li a {
+.nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-.main,
-.aside {
+.nav ul li a:hover {
+  color: #add8e6;
+}
+
+.main-content {
   display: inline-block;
   vertical-align: top;
-  padding: 20px;
-}
-
-.main {
   width: 65%;
+  padding: 5px;
 }
 
-.main img {
+.main-content figure {
+  margin: 0;
+}
+
+.main-content img {
   width: 100%;
   height: auto;
 }
 
+.main-content figcaption {
+  text-align: center;
+}
+
 .aside {
+  display: inline-block;
+  vertical-align: top;
   width: 30%;
-  height: 100%;
-  background: #f1f1f1;
+  padding: 20px;
+}
+
+.aside h2 {
+  font-size: 2rem;
+}
+
+.aside ul {
+  padding-left: 5px;
+}
+
+.aside ul li {
+  list-style: none;
+}
+
+.aside a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.aside a:hover {
+  color: blue;
 }
 
 .footer {
   padding: 0.5rem 0;
   background-color: #333;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   color: white;
 }
